@@ -1,0 +1,59 @@
+Outline of the course:
+
+Training 1: What is Python? and Basic Modules
+
+- What do computers do?
+- What happens when code executes?
+- Compiled vs Interpreted
+- Procedural vs Object-Oriented
+- Python's module structure
+- Python vs IPython
+- Script, functions, and classes
+- Practicum:
+	- Writing a simple module
+	- Spring-mass-damper with and without a class - more and more compicated springs
+- Summary: What makes Python special?
+
+
+Training 2: Data Structures (Non-Iterables, Lists, Dicts, NumPy Arrays, and Pandas DataFrames)
+
+- Deep dive into Python objects - inheritance (how Python 3 differs from Python 2 in this respect)
+- Numeric types
+- Booleans
+- Characters and strings
+- Lists and Dicts
+	- What is a pointer? and the copy() functionality
+	- how they differ and how to unpack them
+- NumPy ndarrays
+- Pandas DataFrames
+- Practicum:
+	- Working with lists and dicts:
+		- Point will be to show that lists are better for iteration but dicts are more convenient for storage of separate values
+	- Extracting and plotting data task:
+		- Probably something to do with NHTS data
+- Summary: Leveraging OOP
+
+Training 3: NumPy and Numba: Speeding up Code via Vectrization and JIT Compilation
+
+- Why compiled languages are so much more efficient
+- Why vectorization speeds code up
+- Writing for interpreters vs compilers
+- Practicum:
+	- Simulation with vectorization
+	- Simulation with JIT compilation
+- Summary: How to speed your code up
+
+Training 4: Version Control
+
+- Version control fundamentals
+	- Deltas 
+	- Graph theory and trees
+	- Merge conflicts
+- Git: downstream and upstream repositories
+- Practicum:
+	- Using git for local repositories
+	- Using github for a shared respository
+- Summary: Coding around version control
+
+Training 5+: Advanced Topics at Request
+
