@@ -14,13 +14,11 @@ Training 1: What is Python? and Basic Modules
 	- Spring-mass-damper with and without a class - more and more compicated springs
 - Summary: What makes Python special?
 
-
-Training 2: Data Structures (Non-Iterables, Lists, Dicts, NumPy Arrays, and Pandas DataFrames)
+Training 2: Types (Primitives, Lists, Dicts, NumPy Arrays, and Pandas DataFrames)
 
 - Deep dive into Python objects - inheritance (how Python 3 differs from Python 2 in this respect)
-- Numeric types
-- Booleans
-- Characters and strings
+- Primitives
+- What is an iterable?
 - Lists and Dicts
 	- What is a pointer? and the copy() functionality
 	- how they differ and how to unpack them
@@ -56,4 +54,16 @@ Training 4: Version Control
 - Summary: Coding around version control
 
 Training 5+: Advanced Topics at Request
-
+- Possible topics:
+	- Optimization
+	- Simulation Programming
+	- Network analysis
+	- Plotting data
+	- GIS stuff
+	- Regression analysis
+	- Pulling data from the internet
+	- Packages for distribution (dependencies and setup.py files)
+	- Command-line interfaces
+	- Graphical user interfaces
+	- Cryptography and data security
+	- Runtime optimization
