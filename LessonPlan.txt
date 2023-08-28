@@ -1,6 +1,6 @@
 Outline of the course:
 
-Training 1: What is Python? and Basic Modules
+Training 1: What is Python? and Basic Modules (Aaron)
 
 - What do computers do?
 - What happens when code executes?
@@ -11,10 +11,10 @@ Training 1: What is Python? and Basic Modules
 - Script, functions, and classes
 - Practicum:
 	- Writing a simple module
-	- Spring-mass-damper with and without a class - more and more compicated springs
+	- Spring-mass-damper with and without a class - more and more complicated springs
 - Summary: What makes Python special?
 
-Training 2: Types (Primitives, Lists, Dicts, NumPy Arrays, and Pandas DataFrames)
+Training 2: Types (Primitives, Lists, Dicts, NumPy Arrays, and Pandas DataFrames) (Aaron)
 
 - Deep dive into Python objects - inheritance (how Python 3 differs from Python 2 in this respect)
 - Primitives
@@ -31,17 +31,42 @@ Training 2: Types (Primitives, Lists, Dicts, NumPy Arrays, and Pandas DataFrames
 		- Probably something to do with NHTS data
 - Summary: Leveraging OOP
 
-Training 3: NumPy and Numba: Speeding up Code via Vectrization and JIT Compilation
+Trining 3: CodeMari: Basic hacks to reduce coding chaos (Vaish)
+
+- How to pick, use and debug with an IDE (PyCharm example)
+- Package management, virtual environments, etc. with anaconda
+- How to make your code more readable (coding conventions and style) 
+- Class-based programming patterns
+- Practicum:
+	- Introduce PyVharm and Anaconda
+	- Identify and resolve stylistic flaws in a piece of code to improve clarity
+- Summary: Organizing and maintaining code
+
+Training 4: Pandas and Beyond (Vaish)
+
+- Pandas Data structures (Series, DataFrames, Panels)
+- Basic Statistics and visualizations
+- Data Wrangling Operations (merging, grouping, concatenating)
+- Limitations of Pandas 
+- Practicum: Working with Pandas data frames to clean and manipulate data
+- Summary: When and how to use pandas
+
+Training 5: Speeding up Code (Aaron, Vaish)
 
 - Why compiled languages are so much more efficient
 - Why vectorization speeds code up
 - Writing for interpreters vs compilers
+- Dealing with large datasets:
+	- Simple speed-up hacks (efficient Datatypes, leverage NumPy, use parquet, etc.)
+	- Chunking
+	- Parallel computing with Dask
 - Practicum:
 	- Simulation with vectorization
 	- Simulation with JIT compilation
+	- Run-time comparisons 
 - Summary: How to speed your code up
 
-Training 4: Version Control
+Training 6: Version Control (Aaron)
 
 - Version control fundamentals
 	- Deltas 
@@ -52,6 +77,32 @@ Training 4: Version Control
 	- Using git for local repositories
 	- Using github for a shared respository
 - Summary: Coding around version control
+
+Training 7: Using Databases with Python (Vaish, maybe Kai)
+
+- What is a database? Why may we need one? (Pandas vs. SQL)
+- Refresher: Object Oriented Python 
+- Basics of Databases 
+	- Types of Databases (hierarchical, network, relational, etc.)
+	- Database Design (define schema, entities, keys, etc.)
+	- Relational Databases
+		- Intro to relational data
+- Intro to Basic Query Language 
+	- CRUD Operations (Create, Read, Update, Delete)
+- Practicum:
+	- Design a relational database in python using MySQL (possibly for our large DMV dataset)
+	- Run some queries on designed database
+- Summary: How to create and use databases for complex datasets
+
+Training 8: Critical Internet-ing (TBD)
+
+- How to leverage the internet (stack overflow, package documentation, Git repos, etc.) to :
+	- debug 
+	- find resources
+	- learn new coding things 
+- Practicum:
+	- A bunch of googling
+- Summary: How to figure coding things out on your own
 
 Training 5+: Advanced Topics at Request
 - Possible topics:
