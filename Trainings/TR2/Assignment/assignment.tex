@@ -1,0 +1,89 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[letterpaper, margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{mathptmx}
+\usepackage{float}
+\usepackage[cmex10]{amsmath}
+\usepackage{amsthm,amssymb}
+\usepackage{url}
+\urlstyle{same} 
+\def\UrlBreaks{\do\/\do-}
+\usepackage{breakurl}
+\usepackage{fancybox}
+\usepackage{breqn}
+\usepackage{array}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{comment}
+\usepackage[english]{babel}
+\usepackage[acronym,nomain]{glossaries} % list of acronyms
+\usepackage{xurl}
+\usepackage{cite} % math and engineering style citations
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{mathptmx}
+\usepackage{float}
+\usepackage{lipsum}
+\usepackage{framed}
+\usepackage[T1]{fontenc}
+\usepackage[pdfpagelabels,pdfusetitle,colorlinks=false,pdfborder={0 0 0}]{hyperref}
+
+\renewcommand{\arraystretch}{1.2}
+
+\sloppy
+
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1-2\tabcolsep}}
+
+\title{Assignment: Rocket Railroad Car}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section*{Problem}
+
+A railroad car is positioned on a long straight flat track with two rockets attached to it, one on the front pointing forward and one on the back pointing backward. Both rockets have a thrust of $T$. The train car has a mass of $M$ and resistive forces are defined by the road-loads ABC equation. The rear rocket burn will start at $S_R$ and last $D_R$ seconds and the front rocket burn will start at $S_F$ and last $D_F$. The physics of the problem are defined as
+
+\begin{gather}
+	F_t=M\ddot{x}_t=F_{R,t}-F_{F,t}-A-B\dot{x}_t-C\dot{x}_t^2\\
+	\dot{x}_{t+1}=\dot{x}_t+\ddot{x}_t\Delta t\\
+	x_{t+1}=x_t+\dot{x}_t\Delta t+\frac{1}{2}\ddot{x}_t\Delta t^2
+\end{gather}
+
+where $A$, $B$, and $C$ are the coefficients of the road-loads ABC equation, and $x$ is the position of the car. The following are suggested values for the problem parameters.
+
+\begin{table}[H]
+	\centering
+	\caption{Suggested values for problem parameters}
+	\begin{tabular}{|C{\linewidth/3}|C{\linewidth/3}|}
+		\hline Parameter & Value\\
+		\hline $M$ & 10,000 []kg]\\
+		\hline $T$ & 10,000 [N]\\
+		\hline $A$ & 100 [N]\\
+		\hline $B$ & 50 [N-s/m]\\
+		\hline $C$ & 150 [N-s\textsuperscript{2}/m]\\
+		\hline $S_R$ & 0 [s] \\
+		\hline $D_F$ & 10 [s] \\
+		\hline $S_R$ & 5 [s] \\
+		\hline $D_F$ & 8 [s] \\
+		\hline
+	\end{tabular}
+\end{table}
+
+\section*{Assignment}
+
+Can you implement the problem in the following ways:
+
+\begin{enumerate}
+	\item As script: Please write in a single cell of a Jupyter notebook or a single .py file with no functions or classes, a script that simulates the car for 100 seconds and plots position, velocity, and acceleration.
+	\item As functions: Please write a module containing a function which simulates the railroad car for a given amount of time. Required inputs will be burn start time and duration for both rockets and simulation time axis. All other parameters should be optional inputs. The module will also contain a function for plotting the results.
+	\item Object-Oriented: Please write a module containing a class which holds the parameters for the car as attributes as well as functions for simulating and plotting. The simulation function should take burn start time and duration for both rockets and time axis as inputs.
+\end{enumerate} 
+	
+	
+	
+	
+\end{document}
